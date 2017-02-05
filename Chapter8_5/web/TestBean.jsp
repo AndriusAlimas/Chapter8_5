@@ -24,6 +24,7 @@ not mistake ) look at index.jsp names match -->
    --%>
 
 	<!-- Second version to see uncomment this: -->
+	<!--  in this version we using regex * which means all property must match with request parameter to work -->
 	<jsp:useBean id='person' type='example.bean.PersonBean'
 		class='example.bean.EmployeeBean'>
 		<jsp:setProperty name='person' property='*' />
