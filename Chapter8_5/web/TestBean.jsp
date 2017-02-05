@@ -13,20 +13,21 @@ and set all properties using naming match from form (request parameter[not attri
 not mistake ) look at index.jsp names match -->
 
 	<!--  First version to see uncomment this: -->
-	<jsp:useBean id='person' type='example.bean.PersonBean' class='example.bean.EmployeeBean'> 
+	<!-- We didnt give any property value !! -->
+	<%-- <jsp:useBean id='person' type='example.bean.PersonBean' class='example.bean.EmployeeBean'> 
 		<jsp:setProperty name='person' property='firstName' />
 		<jsp:setProperty name='person' property='lastName' />
 		<jsp:setProperty name='person' property='empID' />
 		<jsp:setProperty name='person' property='startYear' />
 		<jsp:setProperty name='person' property='payRate' />
 	</jsp:useBean>
-  
+   --%>
 
 	<!-- Second version to see uncomment this: -->
-	<%-- <jsp:useBean id='person' type='example.bean.PersonBean'
+	<jsp:useBean id='person' type='example.bean.PersonBean'
 		class='example.bean.EmployeeBean'>
 		<jsp:setProperty name='person' property='*' />
-	</jsp:useBean> --%>
+	</jsp:useBean>
 
 	<table border="3">
 		<tr>
